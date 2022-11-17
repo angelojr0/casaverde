@@ -1,0 +1,31 @@
+.Menu {
+    display: block;
+}
+
+.navBar {
+    display: flex;
+}
+
+.navUl {
+    display: flex;
+    margin: 18px auto auto auto ;
+}
+
+.navList {
+    list-style: none;
+}
+
+.navList:last-child {
+    font-weight: bold;
+}
+
+.navAnchor {
+    padding: 24px 10px 0px 10px;
+    text-decoration: none;
+    color: #202020;
+}
+
+.logo {
+    display: flex;
+    margin: auto;
+}
