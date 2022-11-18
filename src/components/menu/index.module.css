@@ -3,9 +3,15 @@
     display: block;
     position: fixed;
     width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1.25em;
+    z-index: 99;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .Menu {
         font-size: 12px;
     }
