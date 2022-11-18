@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&family=Montserrat:wght@400;500;700;900&display=swap');
+
+
+
+.divNewsletter {
+    margin: 210px auto 0px 20vw;
+    display: inline-block;
+    
+    line-height: 2em;
+    color: #202020;
+}
+
+@media screen and (max-width: 900px) {
+    .divNewsletter {
+        background-color: #ffe29a;
+        width: 120%;
+        margin-left: auto;
+    }
+    .divNewsletter > h1, h2, p {
+        margin: auto;
+    }
+
+   
+}
+
+.divNewsletter > h1 {
+    font: normal normal 900 82px/94px 'Elsie Swash Caps', cursive; 
+    max-width: 360px;
+
+}
+
+.divNewsletter > h2 {
+    font: normal normal 400 22px/27px 'Montserrat', sans-serif;
+    opacity: 0.5;
+    max-width: 360px;
+
+}
+
+.divNewsletter > p {
+    font: normal normal 400 16px/26px 'Montserrat', sans-serif;
+    opacity: 0.5;
+    max-width: 360px;
+
+}
