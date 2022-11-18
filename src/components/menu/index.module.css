@@ -1,14 +1,35 @@
+
 .Menu {
     display: block;
+    position: fixed;
+    width: 100%;
 }
+
+@media screen and (max-width: 800px) {
+    .Menu {
+        font-size: 12px;
+    }
+    .navUl {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 420px ) {
+    .navAnchor {
+        display: contents;
+    }
+}
+
 
 .navBar {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .navUl {
     display: flex;
     margin: 18px auto auto auto ;
+    padding: 0px;
 }
 
 .navList {
