@@ -2,6 +2,7 @@
 .Menu {
     display: block;
     position: fixed;
+    padding-top: 20px;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -20,7 +21,7 @@
     }
 }
 
-@media screen and (max-width: 420px ) {
+@media screen and (max-width: 440px ) {
     .navAnchor {
         display: contents;
     }
