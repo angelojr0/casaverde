@@ -2,7 +2,7 @@ import styled, {createGlobalStyle} from "styled-components";
 
 
 export const GlobalStyle = createGlobalStyle `
-    @charset "UTF-8";
+    
     body {
         margin: 0;
         -webkit-font-smoothing: antialiased;
@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle `
     .bgQuery {
         @media screen and (max-width: 900px) {}
     }
-` 
+`
 
 export const Background = styled.div `
 

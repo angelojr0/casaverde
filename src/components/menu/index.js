@@ -1,34 +1,40 @@
 import logo from '../../images/logo.svg'
-import styles from './index.module.css'
+
+import {NavAnchor, NavBar, NavList, NavUl} from './styled.jsx'
 
 export function Menu() {
     return (
-      <header className={styles.Menu}>
-        <nav className={styles.navBar}>
-            <img src={logo} className={styles.logo} alt="Logo" />
-            <ul className={styles.navUl}>
-                <li className={styles.navList}>
-                    <a href='#' className={styles.navAnchor}> Como fazer</a>
+      <header>
+
+        <NavBar>
+            
+            <img src={logo} alt="Logo" style={{display:'flex', margin:'auto'}} />
+
+            <NavUl>
+                <NavList>
+                    <NavAnchor href='#'> Como fazer</NavAnchor>
                     /
-                </li>
-                <li className={styles.navList}>
-                    <a href='#' className={styles.navAnchor}> Ofertas</a>
+                </NavList>
+                <NavList>
+                    <NavAnchor href='#'> Ofertas</NavAnchor>
                     /
-                </li>
-                <li className={styles.navList}>
-                    <a href='#' className={styles.navAnchor}> Depoimentos</a>
+                </NavList>
+                <NavList>
+                    <NavAnchor href='#'> Depoimentos</NavAnchor>
                     /
-                </li>
-                <li className={styles.navList}>
-                    <a href='#' className={styles.navAnchor}> Videos</a>
+                </NavList>
+                <NavList>
+                    <NavAnchor href='#'> Videos</NavAnchor>
                     /
-                </li>
-                <li className={styles.navList}>
-                    <a href='#' className={styles.navAnchor}> Meu carrinho</a>
+                </NavList>
+                <NavList>
+                    <NavAnchor href='#'> Meu carrinho</NavAnchor>
                     
-                </li>
-            </ul> 
-        </nav>
+                </NavList>
+            </NavUl> 
+            
+        </NavBar>
+
       </header>
     );
   }
