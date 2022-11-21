@@ -5,7 +5,7 @@ export function Menu() {
     return (
       <header className={styles.Menu}>
         <nav className={styles.navBar}>
-            <img src={logo} className={styles.logo} />
+            <img src={logo} className={styles.logo} alt="Logo" />
             <ul className={styles.navUl}>
                 <li className={styles.navList}>
                     <a href='#' className={styles.navAnchor}> Como fazer</a>
