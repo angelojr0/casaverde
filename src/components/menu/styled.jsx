@@ -33,15 +33,6 @@ export const NavUl = styled.ul `
 export const NavBar = styled.nav `
     display: flex;
     flex-wrap: wrap;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1em;
-    line-height: 1.25em;
-
-    @media screen and (max-width: 900px) {
-        font-size: 12px;
-    }
 `
 
 export const MenuWrapper = styled.header `
@@ -49,5 +40,14 @@ export const MenuWrapper = styled.header `
     position: fixed;
     padding-top: 20px;
     width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1.25em;
     z-index: 99;
+
+    @media screen and (max-width: 900px) {
+        font-size: 12px;
+    }
 `

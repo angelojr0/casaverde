@@ -1,13 +1,13 @@
 import logo from '../../images/logo.svg'
 
-import {NavAnchor, NavBar, NavList, NavUl} from './styled.jsx'
+import {MenuWrapper, NavAnchor, NavBar, NavList, NavUl} from './styled.jsx'
 
 export function Menu() {
     return (
-      <header>
+      <MenuWrapper>
 
         <NavBar>
-            
+
             <img src={logo} alt="Logo" style={{display:'flex', margin:'auto'}} />
 
             <NavUl>
@@ -35,7 +35,7 @@ export function Menu() {
             
         </NavBar>
 
-      </header>
+      </MenuWrapper>
     );
   }
     
