@@ -1,9 +1,31 @@
 import HeroImg from "../../images/hero-image.png"
 import mailIcon from "../../images/mail.svg"
+import { useFormik } from "formik"
 
-import {DivNewsletter, EmailButton, EmailDiv, EmailInput, ImageHero} from './styled'
+import {DivNewsletter, EmailButton, ErrorMessage, EmailDiv, EmailInput, ImageHero} from './styled'
 
 export function AssinarNewsletter () {
+
+    const validate = values => {
+        const errors = {};
+        if (!values.email) {
+            errors.email = 'Required';
+          }else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+            errors.email = 'Invalid email address';
+          }
+          return errors;
+        };
+
+    const formik = useFormik({
+        initialValues: {
+          email: '',
+        }, validate,
+        onSubmit: values => {
+          alert(JSON.stringify(values, null, 2));
+        },
+      });
+
+
     return (
         <div>
             <div>
@@ -16,9 +38,20 @@ export function AssinarNewsletter () {
                     Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.</p>
 
                 <EmailDiv>
-                    <EmailInput type="email" placeholder="Insira seu e-mail" autoComplete="off" mailIcon={mailIcon}/>
+                    <EmailInput 
+                    type="email"
+                     placeholder="Insira seu e-mail" 
+                    autoComplete="off" 
+                    mailIcon={mailIcon}
+                    id="email"
+                    name="email"
+                    onChange={formik.handleChange}
+                    value={formik.values.email}
+                    onBlur={formik.handleBlur}
+                    />
                     <EmailButton type="submit">Assinar newsletter</EmailButton>
                 </EmailDiv>
+                {formik.errors.email ? <ErrorMessage>{formik.errors.email}</ErrorMessage> : null}
             </DivNewsletter>
             
         </div>

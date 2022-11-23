@@ -105,3 +105,9 @@ export const ImageHero = styled.img `
     @media screen and (max-width: 900px) {visibility: hidden;}
 
 `
+
+export const ErrorMessage = styled.div `
+    color: #610202;
+    font-size: 16px;
+    padding-left: 60px;
+`
