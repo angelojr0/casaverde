@@ -19,11 +19,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
  - [#7DaysOfCode](https://7daysofcode.io/)
  - [Figma do Projeto](https://www.figma.com/file/0yOQR6fGtbdrmqeStiO0jf/7Days-React?node-id=0%3A1)
 
+# Tecnologias Utilizadas:
+ - HTML / CSS / JS
+ - ReactJS
+ - Styled-Components
 
-## Screenshots
+# Screenshots
 
-# Layout web
+## Layout web
 ![App Screenshot](https://github.com/angelojr0/casaverde/blob/main/preview/projeto-casa-verde-7daysofcode.png)
 
-# Layout mobile
+## Layout mobile
 ![App Screenshot](https://github.com/angelojr0/casaverde/blob/main/preview/projeto-casa-verde2-7daysofcode.png)
