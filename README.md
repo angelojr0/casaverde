@@ -22,8 +22,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Screenshots
 
-##Layout web
+# Layout web
 ![App Screenshot](https://github.com/angelojr0/casaverde/blob/main/preview/projeto-casa-verde-7daysofcode.png)
 
-##Layout mobile
+# Layout mobile
 ![App Screenshot](https://github.com/angelojr0/casaverde/blob/main/preview/projeto-casa-verde2-7daysofcode.png)
