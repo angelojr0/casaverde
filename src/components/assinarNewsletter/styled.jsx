@@ -12,21 +12,17 @@ export const DivNewsletter = styled.div `
         max-width: 360px;
     }
 
-    > h2 {
+    > h2, p {
         font: normal normal 400 22px/27px 'Montserrat', sans-serif;
         opacity: 0.5;
         max-width: 360px;
     }
-
-    > p {
-        font: normal normal 400 16px/26px 'Montserrat', sans-serif;
-        opacity: 0.5;
-        max-width: 360px;
-    }
+    > p {font-size: 16px;}
 
     @media screen and (max-width: 900px) { 
         background-color: #ffe29a;
         width: 100%;
+        height: 620px;
         margin-left: auto;
 
         > h1, h2, p {
@@ -41,6 +37,8 @@ export const EmailDiv = styled.div `
     display: flex;
     @media screen and (max-width: 900px){
         flex-direction: column;
+        padding-top: 30px;
+        margin-bottom: 50px;
     }
 `
 
@@ -56,12 +54,10 @@ export const EmailInput = styled.input `
     background: white url('${(props) => props.mailIcon}') no-repeat 10px;
 
     ::placeholder {
-        font: normal normal 400 16px/20px 'Montserrat', sans-serif;
         color: #202020;
         opacity: 0.3;
         padding-left: 40px;
-        
-    }
+    } 
     :focus::placeholder {color: transparent;}
 
     @media screen and (max-width: 900px) { 
@@ -102,12 +98,20 @@ export const ImageHero = styled.img `
     z-index: -1;
     left: 50%;
 
-    @media screen and (max-width: 900px) {visibility: hidden; display: none;}
-
+    @media screen and (max-width: 900px) {display: none;}
 `
 
 export const ErrorMessage = styled.div `
-    color: #610202;
-    font-size: 16px;
-    padding-left: 60px;
+    color: #8b0909;
+    font-size: 18px;
+    position: absolute;
+    top: 69%;
+    left: 28%;
+
+    @media screen and (max-width: 900px){
+       position: relative; 
+       margin: auto;
+       top: 0;
+       left: 0;
+    }
 `

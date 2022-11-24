@@ -9,9 +9,9 @@ export function AssinarNewsletter () {
     const validate = values => {
         const errors = {};
         if (!values.email) {
-            errors.email = 'Required';
+            errors.email = 'Por favor, digite um E-Mail';
           }else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-            errors.email = 'Invalid email address';
+            errors.email = 'Endereço de E-Mail Inválido';
           }
           return errors;
         };
@@ -49,9 +49,10 @@ export function AssinarNewsletter () {
                     value={formik.values.email}
                     onBlur={formik.handleBlur}
                     />
-                    <EmailButton type="submit" value={'/submit'}>Assinar newsletter</EmailButton>
+                    <EmailButton type="submit" href="submit" value={'/submit'}>Assinar newsletter</EmailButton>
+                    {formik.errors.email ? <ErrorMessage>{formik.errors.email}</ErrorMessage> : null}
                 </EmailDiv>
-                {formik.errors.email ? <ErrorMessage>{formik.errors.email}</ErrorMessage> : null}
+                
             </DivNewsletter>
             
         </div>
