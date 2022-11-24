@@ -102,7 +102,7 @@ export const ImageHero = styled.img `
     z-index: -1;
     left: 50%;
 
-    @media screen and (max-width: 900px) {visibility: hidden;}
+    @media screen and (max-width: 900px) {visibility: hidden; display: none;}
 
 `
 

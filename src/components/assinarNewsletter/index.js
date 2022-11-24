@@ -49,7 +49,7 @@ export function AssinarNewsletter () {
                     value={formik.values.email}
                     onBlur={formik.handleBlur}
                     />
-                    <EmailButton type="submit">Assinar newsletter</EmailButton>
+                    <EmailButton type="submit" value={'/submit'}>Assinar newsletter</EmailButton>
                 </EmailDiv>
                 {formik.errors.email ? <ErrorMessage>{formik.errors.email}</ErrorMessage> : null}
             </DivNewsletter>
