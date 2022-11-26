@@ -8,8 +8,8 @@ export const DivNewsletter = styled.div `
     color: #202020;
 
     > h1 {
-        font: normal normal 900 82px/94px 'Elsie Swash Caps', cursive; 
-        max-width: 360px;
+        font: normal normal 900 5em 'Elsie Swash Caps', cursive; 
+        max-width: 330px;
     }
 
     > h2, p {
@@ -21,13 +21,25 @@ export const DivNewsletter = styled.div `
 
     @media screen and (max-width: 900px) { 
         background-color: #ffe29a;
-        width: 100%;
+        width: 100vw;
         height: 620px;
         margin-left: auto;
 
         > h1, h2, p {
             margin: auto;
         }
+
+    @media screen and (max-width: 500px) {
+        > h1 {
+            font-size: 4em;
+        }
+        > h2 {
+            font-size: 1.5em;
+        }
+        > p {
+            font-size: 1em;
+        }
+    }
     }
 `
 
@@ -65,6 +77,9 @@ export const EmailInput = styled.input `
         margin: auto;
         box-shadow: none;
     }
+    @media screen and (max-width: 500px) {
+        width: 350px;
+    }
 
 `
 
@@ -90,13 +105,16 @@ export const EmailButton = styled.button `
         box-shadow: none;
         width: 390px;
     }
+    @media screen and (max-width: 500px) {
+        width: 350px;
+    }
 `
 
 export const ImageHero = styled.img `
     display: flex;
     position: absolute;
     z-index: -1;
-    left: 50%;
+    left: 50vw;
 
     @media screen and (max-width: 900px) {display: none;}
 `
@@ -105,8 +123,8 @@ export const ErrorMessage = styled.div `
     color: #8b0909;
     font-size: 18px;
     position: absolute;
-    top: 69%;
-    left: 28%;
+    top: 69vh;
+    left: 28vw;
 
     @media screen and (max-width: 900px){
        position: relative; 

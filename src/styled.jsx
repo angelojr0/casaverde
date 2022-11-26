@@ -7,7 +7,6 @@ export const GlobalStyle = createGlobalStyle `
         margin: 0;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        
     }
 
     * {
@@ -15,16 +14,12 @@ export const GlobalStyle = createGlobalStyle `
         margin: 0;
         padding: 0;
     }
-
-    .bgQuery {
-        @media screen and (max-width: 900px) {}
-    }
 `
 
 export const Background = styled.div `
 
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     z-index: -999;
 
@@ -35,5 +30,4 @@ export const Background = styled.div `
     @media screen and (max-width: 900px) {
         visibility: ${(props) => props.visibility};
         }
-
 `

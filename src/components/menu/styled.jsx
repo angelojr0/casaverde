@@ -28,18 +28,30 @@ export const NavUl = styled.ul `
     @media screen and (max-width: 900px) {
         padding-left: 0px;
     }
+    @media screen and (max-width: 500px) {
+        margin-top: 0px;
+    }
 `
 
 export const NavBar = styled.nav `
     display: flex;
     flex-wrap: wrap;
+
+    @media screen and (max-width: 900px) {
+        background-color: white;
+        margin-top: -20px;
+    }
+    @media screen and (max-width: 500px) {
+        background-color: white;
+        margin-top: -20px;
+    }
 `
 
 export const MenuWrapper = styled.header `
     display: block;
     position: fixed;
     padding-top: 20px;
-    width: 100%;
+    width: 100vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -49,5 +61,13 @@ export const MenuWrapper = styled.header `
 
     @media screen and (max-width: 900px) {
         font-size: 12px;
+    }
+`
+
+export const ImageDiv = styled.div `
+    display:block; 
+    margin:auto;
+    @media screen and (max-width: 500px) {
+        transform: scale(0.7);   
     }
 `

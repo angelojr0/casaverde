@@ -1,6 +1,6 @@
 import logo from '../../images/logo.svg'
 
-import {MenuWrapper, NavAnchor, NavBar, NavList, NavUl} from './styled.jsx'
+import {ImageDiv, MenuWrapper, NavAnchor, NavBar, NavList, NavUl} from './styled.jsx'
 
 export function Menu() {
     return (
@@ -8,8 +8,9 @@ export function Menu() {
 
         <NavBar>
 
-            <img src={logo} alt="Logo" style={{display:'flex', margin:'auto'}} />
-
+            <ImageDiv>
+                <img src={logo} alt="Logo" style={{display:'flex', margin:'auto'}} />
+            </ImageDiv>
             <NavUl>
                 <NavList>
                     <NavAnchor href='#'> Como fazer</NavAnchor>

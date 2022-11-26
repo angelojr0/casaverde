@@ -5,7 +5,6 @@ import { useFormik } from "formik"
 import {DivNewsletter, EmailButton, ErrorMessage, EmailDiv, EmailInput, ImageHero} from './styled'
 
 export function AssinarNewsletter () {
-
     const validate = values => {
         const errors = {};
         if (!values.email) {
@@ -39,20 +38,20 @@ export function AssinarNewsletter () {
 
                 <EmailDiv>
                     <EmailInput 
-                    type="email"
-                     placeholder="Insira seu e-mail" 
-                    autoComplete="off" 
-                    mailIcon={mailIcon}
-                    id="email"
-                    name="email"
-                    onChange={formik.handleChange}
-                    value={formik.values.email}
-                    onBlur={formik.handleBlur}
+                      type="email"
+                      placeholder="Insira seu e-mail" 
+                      autoComplete="off" 
+                      mailIcon={mailIcon}
+                      id="email"
+                      name="email"
+                      onChange={formik.handleChange}
+                      value={formik.values.email}
+                      onBlur={formik.handleBlur}
+                      required
                     />
                     <EmailButton type="submit" href="submit" value={'/submit'}>Assinar newsletter</EmailButton>
                     {formik.errors.email ? <ErrorMessage>{formik.errors.email}</ErrorMessage> : null}
-                </EmailDiv>
-                
+                </EmailDiv>  
             </DivNewsletter>
             
         </div>
